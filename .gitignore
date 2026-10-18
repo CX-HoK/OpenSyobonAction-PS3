@@ -1,0 +1,10 @@
+main.o
+loadg.o
+DxLib.o
+*.bak
+SyobonAction.elf
+SyobonAction_stripped.elf
+SyobonAction.pkg
+pkg_build/USRDIR/EBOOT.BIN
+log.txt
+/dev_hdd0/
