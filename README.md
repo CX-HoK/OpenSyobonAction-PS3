@@ -1,91 +1,56 @@
-Open Syobon Action
-==================
-###### Original game developer: Chiku (ちく)
-###### Open-source port developer: Mathew Velasquez
-###### Developer/maintainer of this fork: Karen／明美 (@angelXwind)
-#### [English] [[日本語]](README_ja.md)
+# Syobon Action (Cat Mario) for PS3
 
-Open Syobon Action (オープンしょぼんのアクション) is an open-source cross-platform port of the unforgiving Japanese platformer using SDL.
+A native PlayStation 3 port of **Syobon Action (Cat Mario)** built using OpenSyobonAction, the open-source **PSL1GHT v2** SDK, and SDL.
 
-It is also called "Shobon no Action," "Neko Mario," "Cat Mario," or "Cat MeOUCHio."
+Developed by **CX-HoK**.
 
-Notes
------
-* Rather than just playing this game by yourself, it is much more enjoyable to let someone who's never tried it before try playing the game.
-* Those who are under 12 years old are not allowed to play.
-* Please be aware that by playing this game, there is a possibility that you may develop trust issues towards other humans.
-* Please be aware that there is a possibility of getting stressed out while playing this game.
-* If any problems are caused by this game, please understand that the developers cannot take any responsibility.
-* If you wish to distribute this game to a large amount of people, please give credit to the original developer, Chiku (ちく).
-* The game's text is entirely in Japanese, but you do not need to understand the Japanese language in order to play.
+---
 
-Controls (Keyboard)
--------------------
-* Left/Right: Move
-* Z or Up: Jump
-* Space: Double-speed
-* 0 (while in-game): Self-destruction
-* Escape: Exit
-* F1: Return to title screen
-* 1-9 (while at the title screen): Select level
-* 0 at the title screen: Mystery Dungeon (there is a possibility that some bugs may occur)
+## Features
 
-Bugs
-----
-Please report any bugs at the GitHub issue tracker: https://github.com/angelXwind/OpenSyobonAction/issues
+* **Performance:** Native 30 FPS with 60 FPS Turbo support (stable, no frame drops).
+* **Aspect Ratio Toggle:** Press **SELECT** in-game to switch between classic **4:3 (Pillarbox)** and stretched **16:9**.
+---
 
-Command Line Arguments
-----------------------
-`-nosound` - Disables sound
+## Controls (DualShock 3)
 
-Dependencies
-------------
-* SDL
-* SDL_image
-* SDL_mixer
-* SDL_ttf
-* SDL_gfx
+| Button | Action |
+| :--- | :--- |
+| **D-Pad / Left Analog** | Move / Crouch |
+| **Cross (✕)** | Jump |
+| **Square (□)** | Turbo Mode (60 FPS) / Select Stage 1 (Title Screen) |
+| **Circle (○)** | Action / Confirm / Close text box / Skip credits |
+| **Triangle (△)** | Insta Kill / Restart room |
+| **SELECT** | Toggle Aspect Ratio (4:3 / 16:9) |
+| **SELECT + START** | Exit to XMB |
+| **R3 (Right Stick Press)** | Return to Title Screen |
+| **L3 (Left Stick Press)** | Access Secret Stage 0 (*Mystery Dungeon*, Title Screen only) |
 
-Gamepad Notes
--------------
-Your gamepad or joystick may not work by default with Open Syobon Action. Check joyconfig.h for more information.
+### Title Screen Stage Select:
+* **Square:** Stage 1
+* **Triangle:** Stage 2
+* **Circle:** Stage 3
+* **Cross:** Stage 4
+* **L1:** Stage 5
+* **L2:** Stage 6
+* **R1:** Stage 7
+* **R2:** Stage 8
 
-Unimplemented
--------------
-* Font thickness (Not really important)
-* Port to other operating systems (OS X, iOS, Android, etc.)
+---
 
-Release Changelog
------------------
-**Open Syobon Action RC 3**
-* Fixed audio on Windows 7 and above
+## Installation
 
-**Open Syobon Action RC 2**
-* First Windows release!
-* Dvorak keyboard support
-* Error messages more detailed and directed to stdout
-* Compiled code optimized for speed
-* Better initialization and de-initialization code, so you can be confident
- that all resources are freed.
-* Optional sound: The game will no longer crash if there is no audio device
- available, and all sound can be disabled with the -nosound parameter
-* Minor bugfixes here and there
+1. Download the latest `SyobonAction.pkg` from the **[Releases](https://github.com/CX-HoK/OpenSyobonAction-PS3/releases)** section.
+2. Copy the `.pkg` file to the root of a FAT32-formatted USB drive.
+3. Plug the drive into your PS3 and navigate to:  
+   `Package Manager` -> `Install Package Files` -> `Standard`.
+4. Install the package and launch the game from the **Game** column on the XMB.
 
-**Open Syobon Action RC 1**
-* Fixed incorrect "box" rendering (used to draw green pipes)
-* Fixed random crashing at certain parts (thanks to mekuso for the bug report)
-* Volumes now appropriately altered
-* Gamepad support added
-* Now uses original indexed PNGs, with original filenames (capital PNG)
-* Minor tweaks and optimizations
+---
 
-**Open Syobon Action v0.9:**
-* Fixed incorrect character rendering, uses font very similar to the original game
- (sazanami-gothic.ttf rather than msgothic.ttf)
-* Changed encoding of the original readme and source code to UTF-8, so they can
- be viewed correctly with most software
-* Changed DOS newlines to Unix newlines in source and readme
-* Source code has been cleaned up with "indent", removed a few obsolete comments
+## Credits
 
-**Open Syobon Action v0.8:**
-* First release
+* **Chiku (ちく):** Original creator of *Syobon Action*.
+* **akemin-dayo:** Developer of *OpenSyobonAction* (C++/SDL base).
+* **PSL1GHT Community:** Open-source PS3 SDK and toolchain.
+* **CX-HoK:** PS3 native port and integration.
