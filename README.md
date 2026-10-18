@@ -1,6 +1,6 @@
-# Syobon Action (Cat Mario) for PS3
+# Syobon Action for PS3
 
-A native PlayStation 3 port of **Syobon Action (Cat Mario)** built using OpenSyobonAction, the open-source **PSL1GHT v2** SDK, and SDL.
+A native PlayStation 3 port of **Syobon Action ** built using OpenSyobonAction, the open-source **PSL1GHT v2** SDK, and SDL.
 
 Developed by **CX-HoK**.
 
