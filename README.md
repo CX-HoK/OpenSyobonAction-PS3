@@ -1,5 +1,7 @@
 # Syobon Action for PS3
 
+<img width="1040" height="731" alt="syobodo!!" src="https://github.com/user-attachments/assets/ebba4251-0b80-4c63-acb2-b56cc8718c74" />
+
 A native PlayStation 3 port of **Syobon Action ** built using OpenSyobonAction, the open-source **PSL1GHT v2** SDK, and SDL.
 
 Developed by **CX-HoK**.
