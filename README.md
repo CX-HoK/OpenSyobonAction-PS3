@@ -37,6 +37,7 @@ Developed by **CX-HoK**.
 * **L2:** Stage 6
 * **R1:** Stage 7
 * **R2:** Stage 8
+* **L3:** Mystery dungeon 
 
 ---
 
